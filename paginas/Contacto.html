@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Celulares</title>
+    <link rel="shortcut icon" href="imagnes/Historia-del-logo-de-Xiaomi.png" type="image/x-icon">
+</head>
+<body>
+    <nav align="center">
+        <a href="../inicio.html">inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="Productos.html">Productos</a>
+    </nav>
+    <h1 align="center" style="color:orangered">Contactanos</h1>
+    <p align="center">Contactanos, te atendemos las 24 horas del dia</p>
+    <div align="center">
+        <img src="../imagnes/contacto.jpeg" width="30%"  alt="Logo Xiaomi">
+    </div>
+    <br><br>
+    <div align="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1428807926663!2d-75.56513602595581!3d6.244894226340211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442859d833cfa3%3A0xa3fca5c91547777f!2sCesde%20-%20Centro%20de%20Estudios%20Especializados!5e0!3m2!1ses-419!2sco!4v1721836879151!5m2!1ses-419!2sco" width="600" height="450" style="border:0;"></iframe>
+    </div>
+    <br><br>
+    <div align="center">
+        <form action="Reciidos.php" method="post" enctype="application/x-www-form-urlencoded">
+            <!--la etiqueta form sirve para hacer formularios y action sirve para:en HTML especifica la URL a la que se enviarán los datos del formulario cuando se haga un envío -->
+            <label>Nombre completo:</label>
+            <!--label es para informacion-->
+            <input type="text" placeholder="ESCRIBA EN MAYUSCULA" maxlength="10"><br>
+            <label>Ingrese su edad:</label>
+            <input type="number" placeholder="EDAD" min="18" max="100"> <br><br>
+            <label>Escriba su correo:</label>
+            <input type="email" required><br>
+            <label>Escriba Contraseña:</label>
+            <input type="password"> <br>
+            <label>Escriba su fecha de nacimiento:</label>
+            <input type="date" max="2006-12-31" min="1980-01-31"> <br>
+            <label>Sube un archivo:</label>
+            <input type="file" accept=".jpg, .png, .jpeg, .pdf, docx, .doc"> <br>
+            <label>Ingrese la hora:</label>
+            <input type="time"> <br>
+            <label>Ingrese su sexo:</label>
+            <input type="radio" name="Sexo" value="Hombre"> Hombre
+            <input type="radio" name="Sexo" value="Mujer"> Mujer
+            <input type="radio" name="Sexo" value="Otro"> Otro <br>
+            <label>Como te enteraste de nosotros:</label> <br>
+            <input type="checkbox" name="Publicidad" value="Redes"> Redes sociales
+            <input type="checkbox" name="Publicidad" value="Tv"> Television
+            <input type="checkbox" name="Publicidad" value="Radio"> Radio <br>
+            <label>Escriba un comentario:</label> <br>
+            <textarea style="resize: both;" name="Sugerencia" rows="10" cols="20"></textarea> <br>
+            <label>Escoja lo que desea:</label>
+            <select name="TipoProducto">
+                <option value="">Escoja una opcion</option>
+                <option value="Audifonos">Audifonos</option>
+                <option value="Celulares">Celulares</option>
+                <option value="SmartWatch">SmartWatch</option>
+            </select>
+            <br><br><br><br><br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </div>
+</body>
+</html>
